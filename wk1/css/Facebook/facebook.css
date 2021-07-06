@@ -1,0 +1,217 @@
+html {
+    /* height: 150vh; */
+    width: 100vw;
+    font-family: sans-serif;
+    background-color: rgb(241, 241, 241);
+}
+
+
+
+
+html * {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    /* outline: 1px dashed rgba(0, 0, 0, 0.452); */
+    
+}
+
+header {
+    height: 130px;
+}
+
+
+.logo {
+    width: 313px;
+    position: relative;
+    right: 54px;
+    bottom: 5px;
+}
+
+
+
+.container {
+    width: 960px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+
+
+
+
+
+
+.font {
+    font-size: 30px;
+    position: relative;
+    bottom: 70px;
+    right: 20px;
+    line-height: 32px;
+}
+
+
+
+
+footer {
+    height: 200px;
+    background-color: white;
+}
+
+
+.body {
+    height: 100vh;
+}
+
+.info {
+    background-color: white;
+    padding: 17px; 
+    width: 400px; 
+    height: 355px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.164) ;
+}
+
+input {
+    width: 100%;
+    height: 50px;
+    margin-bottom: 15px;
+    border-radius: 7px;
+    padding-left: 20px;
+    font-size: 19px;
+    font-weight: normal;
+    color: rgb(112, 112, 112);
+    border: 1px solid rgb(194, 194, 194);
+}
+
+
+
+.login {
+    color: white;
+    background-color: #1877f2;
+    padding-right: 17px;
+    font-size: 22px;
+    font-weight: bolder;
+    border: none;
+}
+
+
+.login:hover {
+    cursor: pointer;
+    background-color: #186fe0;
+}
+
+
+.forgot {
+    text-align: center;
+    color:#1877f2;
+}
+
+.forgot:hover {
+    text-decoration: underline;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+.page {
+    color: black;
+}
+
+.page:hover {
+    text-decoration: underline;
+}
+
+.newid {
+    width: 160px;
+    margin: auto;
+    background-color: #42b72a;
+    display: block;
+    color: white;
+    padding-right: 35px;
+    margin-top: 23px;
+    font-weight: bolder;
+    border: none;
+}
+
+
+.newid:hover {
+    background-color: #3a9728;
+    cursor: pointer;
+}
+
+.line {
+    border-bottom: 0.5px solid rgb(202, 202, 202);
+    margin-top: 25px;
+}
+
+.newpage {
+    text-align: center;
+    margin-top: 27px;
+}
+
+
+.underfont {
+    color: #979797;
+    padding-top: 20px;
+    text-align: center;
+}
+
+
+
+
+
+
+/* responsive */
+@media(max-width:800px) {
+   .container {
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       justify-content: flex-start;
+       flex-shrink: 1;
+       align-content: center;
+       width: 100vw;
+     }
+     
+
+     header {
+         height: 0px;
+         display: flex;
+     }
+     footer {
+         display: flex;
+     }
+
+     .left {
+         display: flex;
+         flex-direction: column;
+         justify-content: flex-start;
+         align-items: center;
+         position: relative;
+         bottom: 35px;
+     }
+     .right {
+        margin: 0px;
+        position: relative;
+        bottom: 60px;
+     }
+
+
+
+     .logo {
+        text-align: center;
+        transform: translate(30px);
+
+     }
+     .font{
+         text-align: center;
+         font-size: 25px;
+     }
+    footer {
+        margin-top: 100px;
+    }
+}
